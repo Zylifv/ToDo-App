@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>ToDo App</title>
+  </head>
+<body>
+  <div id="wrapper">
+    <h1>ToDo App</h1>
+    <div id="app-box">
+      <h2 id="sub-heading">Add a new task:</h2>
+      <div id="task-box">
+        <button id="new-task"><i class='far fa-file'></i></button>
+          <div id="new-task-info"></div>
+            <div id="add-task-screen">
+              <input type="text"
+                     id="task-title"
+                     minlength="3"
+                     maxlength="20"
+                     placeholder="Task title here..."
+                     required />
+            <textarea id="text" 
+                      placeholder="Enter your task here..."
+                      maxLength="50"></textarea>
+              <div id="calendar">
+                <label for="start-date" id="start-date"><i class='fas fa-calendar-alt'></i> Task entry date: </label>
+                <input type="date"
+                   id="date"
+                   value="2025-01-01"
+                   min="2018-01-01"
+                   max="2038-12-31" 
+                   required
+                       />
+        </div>
+              <div id="calender2">
+                <label for="end-date" id="end-date"><i class='fas fa-bell'></i> Complete by date: </label>
+                <input type="date"
+                   id="end-date"
+                   value="2025-01-01"
+                   min="2018-01-01"
+                   max="2038-12-31" 
+                   required
+                       />
+              </div>
+              <div id="buttons-bottom">
+          <button id="submit-task">✔</button>
+                <button id="editor-button"><i class='fas fa-eraser'></i></button>
+              <button id="discard" onclick="reset()"><i class='far fa-trash-alt'></i></button>
+              </div>
+        </div>
+      </div>
+      <div id="bottom-half">
+        <h2><i class='fas fa-list'></i> Current Tasks:<p id="tasksNum"></p></h2>
+          <div id="ongoing-tasks">
+            <nav>
+              <ul id="userList">
+           </ul>
+         </nav>
+            
+        <div id="all-tasks"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <a id="sig">- By R McGregor</a>
+  <script src="script.js"></script>
+  </body>
+</html>
