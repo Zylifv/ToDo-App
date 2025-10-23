@@ -130,6 +130,7 @@ addTaskBtn.addEventListener("click", () => {
           let parent = document.getElementById("userList");
               parent.removeChild(document.getElementById(editBtn.id));  //removes old li item and replaces it with new one
               tasksNumVal -= 1;
+              tasksNum.innerText = tasksNumVal;
             } else {              
               editCurrentTask = false;
               return;
