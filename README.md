@@ -6,7 +6,7 @@ The project has flaws but this was for me to put my knowledge to the test.
 I wanted to see if i could handle data, edit/delete and add data responsively.
 I will come back to this project later to see how much i have improved.
 
-TODO: Update the remaining tasks total when discarding a task from the edit screen. This currently does not update!
+TODO: Update the remaining tasks total when discarding a task from the edit screen. This is now resolved ✓
 
 To see a working example of this, please follow the link below to my CodePen:
 
