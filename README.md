@@ -1,4 +1,6 @@
 # ToDo-App
+
+![toDo-App-preview](toDoAppPNG.png)
 my attempt at making a ToDo-App by myself
 
 This project was for me to see if i could make a ToDo-App without looking at any code from other sources.
